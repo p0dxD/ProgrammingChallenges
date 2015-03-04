@@ -20,23 +20,27 @@ public class FirstOne {
         i = input.nextInt();
         System.out.println("Please input ending point: ");
         n = input.nextInt();
-        for(; i <= n;i++){
-            countTimes(i);
-        }
-        System.out.println("answer: "+count);
+//        for(; i <= n;i++){
+            countTimes(22);
+//        }
+        System.out.println("Answer: "+getResult());
     }
     /**
      * Main method that does the calculation
      * @param number number to be accounted for
      */
     private static void countTimes(int number){
+        System.out.println(number);
         while(number!=1){
         if(number%2 == 0){
             number= number/2;
+        System.out.println(number);
+            
             count++;
         }
         else{
             number = (number*3)+1;
+        System.out.println(number);
             count++;
         }
     }
@@ -47,7 +51,7 @@ public class FirstOne {
      * 
      * @return result with correct iterations
      */
-    private int getResult(){
+    private static int getResult(){
         return count;
     }
 }
