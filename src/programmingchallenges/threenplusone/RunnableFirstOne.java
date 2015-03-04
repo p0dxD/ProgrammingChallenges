@@ -45,7 +45,7 @@ public class RunnableFirstOne implements Runnable{
         @Override
         public void run(){
             //here implement code
-            countTimes(22);
+            countTimes(10);
         }
     /**
      * Main method that does the calculation
