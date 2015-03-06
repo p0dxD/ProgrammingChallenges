@@ -20,9 +20,9 @@ public class FirstOne {
         i = input.nextInt();
         System.out.println("Please input ending point: ");
         n = input.nextInt();
-//        for(; i <= n;i++){
-            countTimes(22);
-//        }
+        for(; i <= n;i++){
+            countTimes(i);
+        }
         System.out.println("Answer: "+getResult());
     }
     /**
